@@ -60,22 +60,22 @@ void animate() {
 }
 
 char fromIrCode(uint32_t irCode) {
-  if (irCode == 0xFF6897) return '1';
-  if (irCode == 0xFF9867) return '2';
-  if (irCode == 0xFFB04F) return '3';
-  if (irCode == 0xFF30CF) return '4';
-  if (irCode == 0xFF18E7) return '5';
-  if (irCode == 0xFF7A85) return '6';
-  if (irCode == 0xFF10EF) return '7';
-  if (irCode == 0xFF38C7) return '8';
-  if (irCode == 0xFF5AA5) return '9';
-  if (irCode == 0xFF4AB5) return '0';
+  if (irCode == 0xFF6897 || irCode == 0x10) return '1';
+  if (irCode == 0xFF9867 || irCode == 0x810) return '2';
+  if (irCode == 0xFFB04F || irCode == 0x410) return '3';
+  if (irCode == 0xFF30CF || irCode == 0xC10) return '4';
+  if (irCode == 0xFF18E7 || irCode == 0x210) return '5';
+  if (irCode == 0xFF7A85 || irCode == 0xA10) return '6';
+  if (irCode == 0xFF10EF || irCode == 0x610) return '7';
+  if (irCode == 0xFF38C7 || irCode == 0xE10) return '8';
+  if (irCode == 0xFF5AA5 || irCode == 0x110) return '9';
+  if (irCode == 0xFF4AB5 || irCode == 0x910) return '0';
   if (irCode == 0xFF629D) return 'w';
   if (irCode == 0xFFA857) return 's';
   if (irCode == 0xFF22DD) return 'a';
   if (irCode == 0xFFC23D) return 'd';
   if (irCode == 0xFF52AD) return '#';
-  if (irCode == 0xFF02FD) return 'k';
+  if (irCode == 0xFF02FD || irCode == 0x5D0) return 'k';
   return ' ';
 }
 
