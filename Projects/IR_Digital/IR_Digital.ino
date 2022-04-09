@@ -70,11 +70,11 @@ char fromIrCode(uint32_t irCode) {
   if (irCode == 0xFF38C7 || irCode == 0xE10) return '8';
   if (irCode == 0xFF5AA5 || irCode == 0x110) return '9';
   if (irCode == 0xFF4AB5 || irCode == 0x910) return '0';
-  if (irCode == 0xFF629D) return 'w';
-  if (irCode == 0xFFA857) return 's';
-  if (irCode == 0xFF22DD) return 'a';
-  if (irCode == 0xFFC23D) return 'd';
-  if (irCode == 0xFF52AD) return '#';
+  if (irCode == 0xFF629D || irCode == 0x2F0) return 'w';
+  if (irCode == 0xFFA857 || irCode == 0xAF0) return 's';
+  if (irCode == 0xFF22DD || irCode == 0x2D0) return 'a';
+  if (irCode == 0xFFC23D || irCode == 0xCD0) return 'd';
+  if (irCode == 0xFF52AD || irCode == 0xDD0) return '#';
   if (irCode == 0xFF02FD || irCode == 0x5D0) return 'k';
   return ' ';
 }
